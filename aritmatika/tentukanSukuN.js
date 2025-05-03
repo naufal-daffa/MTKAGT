@@ -6,7 +6,7 @@ document.getElementById('form-suku-n').addEventListener('submit', function(event
     const un = parseFloat(document.getElementById('un').value);
 
     const n = ((un - u1) / b) + 1;
-    document.getElementById('hasil-suku-n').textContent = Number.isInteger(n) && n > 0 ? n : "Tidak ada n yang memenuhi";
+    document.getElementById('hasil-suku-n').textContent = n;
 
     let history = JSON.parse(localStorage.getItem('history_tentukanSukuN')) || [];
     history.push(`Nilai n: ${un}, U1: ${u1}, Beda: ${b}, Suku ke-n: ${n}`);
