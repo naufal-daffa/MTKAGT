@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matematika || Geometri</title>
+  <link rel="website icon" type="jpg" href="../img/logo.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+    <div class="container-custom landing-page1 justify-content-center">
+        <h1>Cari Rasio (r)</h1>
+        <form id="form-rasio">
+            <div class="mb-3">
+                <label for="u1" class="form-label">Masukkan suku pertama (U1)</label>
+                <input type="text" class="form-control" id="u1" required>
+            </div>
+            <div class="mb-3">
+                <label for="u2" class="form-label">Masukkan suku kedua (U2)</label>
+                <input type="text" class="form-control" id="u2" required>
+            </div>
+            <div class="d-flex space">
+                <button type="button" class="btn-custom mb-3" onclick="location.href='../geometri.html'">Kembali</button>
+                <button type="submit" class="btn-custom mb-3">Hitung</button>
+            </div>
+        </form>
+        <div class="card text-bg-light p-2">
+            <h4 class="mt-1">Hasil: <span id="hasil-beda"></span></h4>
+        </div>
+        <button class="btn-custom mt-3" onclick="window.location.href='history/rasio/index.html'">History</button>
+    </div>
+
+<script src="cariRasio.js"></script>
+
+</body>
+</html>
